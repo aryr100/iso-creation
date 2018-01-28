@@ -5,16 +5,23 @@ if [ "$UID" -eq "0" ]; then
 	exit 1
 fi
 
-if [ ! $# -eq 1 ]; then
-	echo "ERROR. Syntax is: $0 ARCH"
+if [ ! -f ARCH ]; then
+	echo "No ARCH file."
 	exit 1
+else
+	arch=`cat ARCH`
 fi
 
-arch=$1
+rm -rf iso/{isolinux,kernels,README,EFI}
 
 mkdir -p iso/isolinux
 mkdir -p iso/kernels
 
 cp -r isolinux/$arch/* iso/isolinux/
 cp -r kernel/$arch/* iso/kernels/
-cp README iso/
+cp README.iso iso/README
+
+if [ $arch == "x86_64" ]; then
+	cp -r efi/EFI iso/
+fi
+

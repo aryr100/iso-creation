@@ -1,0 +1,11 @@
+ARCH
+EDITION
+USER
+VERSION
+initrd
+iso
+isolinux
+kernel
+temp
+*.iso
+*.log

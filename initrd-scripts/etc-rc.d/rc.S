@@ -1,51 +1,29 @@
 #!/bin/sh
 # rc.S:  Basic system initialization.
 
-# remove /etc/mtab* so mount creates the /etc/mtab file
-/bin/rm -f /etc/mtab* /etc/nologin 1> /dev/null 2> /dev/null
+# Any /etc/mtab that exists here is old, so we start with a new one:
+/bin/rm -f /etc/mtab{,~,.tmp} && /bin/touch /etc/mtab
 
-# Mounts /proc:
-/bin/mount -av -t nonfs 1> /dev/null 2> /dev/null
+# Add (fake) entry for / to /etc/mtab:
+/sbin/mount -f -w /dev/initramfs / -t tmpfs 1> /dev/null
 
-/sbin/swapon -a 2> /dev/null
+# Mount /proc:
+/sbin/mount -v proc /proc -t proc 1> /dev/null
+
+# Mount sysfs next:
+/sbin/mount -v sysfs /sys -t sysfs 1> /dev/null
+
+# Activate swap:
+/sbin/swapon -a 1> /dev/null
 
 if [ -x /sbin/ldconfig ]; then
-  /sbin/ldconfig 1> /dev/null 2> /dev/null
+  /sbin/ldconfig 1> /dev/null
 fi
-
-# Here's the situation.  Because of the practice of keeping the local
-# time (rather than UTC) in the system's clock, at any given time half
-# of the people doing an install will be creating files that upon
-# reboot will appear to have been created in the future.
-# 
-# There are a lot of things that aren't happy when that happens.  The
-# one that screams the most loudly is e2fsck, and we don't want to
-# anger that!  Sometimes it even proceeds to check the partitions just
-# to be sure the user is fully punished.
-# 
-# But, there's a simple solution.  If we set the (temporary) Linux clock
-# to yesterday (-24h), then there's no way that could occur.  Everything
-# on the system will be in the past (but not too far in the past).
-# Since files will quickly be put into use and given the correct after
-# reboot, this really shouldn't have a negative impact.  Plus, it affects
-# only newly created files during installation -- any file shipped in a
-# package will have an accurate time of creation.  (for its timezone ;-)
-#
-# Update:  We have to use 2 days ago, or chroot()+timezone offset might
-# still be in the future...  <sigh>
-#
-touch /.today
-/bin/sh /sbin/fakedate
 
 ## Detect serial console from kernel command line:
 #if cat /proc/cmdline | grep console=ttyS 1> /dev/null 2> /dev/null ; then
 #  SERIAL_CONSOLE="true"
 #fi
-
-# Try to mount sysfs:
-if cat /proc/filesystems | grep -w sysfs 1> /dev/null 2> /dev/null ; then
-  mount -t sysfs sysfs /sys 2> /dev/null
-fi
 
 # System logger (mostly to eat annoying messages):
 /sbin/syslogd 2> /dev/null
@@ -68,89 +46,111 @@ if ! grep -wq noudev /proc/cmdline ; then
 else
   # Run our old detection routines:
 
-## NOTE:  The installer boots "huge" images that have all of the important
-## USB drivers already built in, so we are deactivating this init script.
-## Look for USB keyboard or storage:
-#/etc/rc.d/rc.usb start
-#sleep 3
+  # Look for USB keyboard or storage:
+  /etc/rc.d/rc.usb start
+  sleep 3
 
-# Look for IEEE1394 devices:
-if grep 1394 /proc/pci 1> /dev/null 2> /dev/null ; then
-  /etc/rc.d/rc.ieee1394 start
-  #sleep 3
-fi
-
-# Load additional install floppies:
-for NEWDISK in 2 ; do
-  if [ ! -r /etc/disk${NEWDISK} ]; then
-    while [ 0 ]; do
-      echo
-      echo -n "Insert install.${NEWDISK} floppy disk to be loaded into RAM disk and press ENTER"
-      read readfoo;
-      if [ "$readfoo" = "Q" -o "$readfoo" = "q" ]; then
-        break;
-      fi
-      echo -n "Loading install.${NEWDISK} floppy into RAM disk...  "
-      ( cd / ; cat /dev/fd0 | zcat 2> /dev/null | tar xf - )
-      if [ -r /etc/disk${NEWDISK} ]; then
-        echo "done."
-        echo
-        break;
-      else
-        echo "Error. (reload or enter Q)"
-        echo
-        continue;
-      fi
-    done
+  # Look for IEEE1394 devices:
+  if grep 1394 /proc/pci 1> /dev/null 2> /dev/null ; then
+    /etc/rc.d/rc.ieee1394 start
+    #sleep 3
   fi
-done
 
-### PROBABLY USELESS WITHOUT SOME TIMED DELAY ABOVE
-## Start USB again (in case we missed a USB keyboard)
-#/etc/rc.d/rc.usb start
+  # Load additional install floppies:
+  for NEWDISK in 2 ; do
+    if [ ! -r /etc/disk${NEWDISK} ]; then
+      while [ 0 ]; do
+        echo
+        echo -n "Insert install.${NEWDISK} floppy disk to be loaded into RAM disk and press ENTER"
+        read readfoo;
+        if [ "$readfoo" = "Q" -o "$readfoo" = "q" ]; then
+          break;
+        fi
+        echo -n "Loading install.${NEWDISK} floppy into RAM disk...  "
+        ( cd / ; cat /dev/fd0 | zcat 2> /dev/null | tar xf - )
+        if [ -r /etc/disk${NEWDISK} ]; then
+          echo "done."
+          echo
+          break;
+        else
+          echo "Error. (reload or enter Q)"
+          echo
+          continue;
+        fi
+      done
+    fi
+  done
 
-# Make detected partitions:
-/dev/makedevs.sh
+  ### PROBABLY USELESS WITHOUT SOME TIMED DELAY ABOVE
+  ## Start USB again (in case we missed a USB keyboard)
+  #/etc/rc.d/rc.usb start
 
-## Not needed with CONFIG_SCSI_MULTI_LUN=y
-#unset SCAN
-## Now we should rescan the "SCSI" bus to look for new USB or firewire devices
-## that look like SCSI devices:
-#if [ -r /proc/bus/usb/devices ]; then
-#  if cat /proc/bus/usb/devices | grep -w usb-storage 1> /dev/null 2> /dev/null ; then
-#    SCAN="true"
-#  fi
-#fi
-#if [ -r /proc/bus/ieee1394/devices ]; then
-#  if cat /proc/bus/ieee1394/devices | grep -w SBP2 1> /dev/null 2> /dev/null ; then
-#    SCAN="true"
-#  fi
-#fi
-#if [ "$SCAN" = "true" ]; then
-#  if ! cat /proc/cmdline | grep -q noscanluns 2> /dev/null ; then
-#    echo "Detected new USB/IEEE1394 storage devices...  scanning all LUNs."
-#    echo "(to skip, give a 'noscanluns' kernel option at boot)"  
-#    #sleep 5
-#    sh /sbin/rescan-scsi-bus -l
-#    #sleep 1
-#  fi
-#fi
-#unset SCAN
+  # Make detected partitions:
+  /dev/makedevs.sh
 
-# Re-assemble RAID volumes:
-/sbin/mdadm -E -s > /etc/mdadm.conf
-/sbin/mdadm -S -s
-/sbin/mdadm -A -s
-# This seems to make the kernel see partitions more reliably:
-fdisk -l /dev/md* 1> /dev/null 2> /dev/null
+  ## Not needed with CONFIG_SCSI_MULTI_LUN=y
+  #unset SCAN
+  ## Now we should rescan the "SCSI" bus to look for new USB or firewire devices
+  ## that look like SCSI devices:
+  #if [ -r /proc/bus/usb/devices ]; then
+  #  if cat /proc/bus/usb/devices | grep -w usb-storage 1> /dev/null 2> /dev/null ; then
+  #    SCAN="true"
+  #  fi
+  #fi
+  #if [ -r /proc/bus/ieee1394/devices ]; then
+  #  if cat /proc/bus/ieee1394/devices | grep -w SBP2 1> /dev/null 2> /dev/null ; then
+  #    SCAN="true"
+  #  fi
+  #fi
+  #if [ "$SCAN" = "true" ]; then
+  #  if ! cat /proc/cmdline | grep -q noscanluns 2> /dev/null ; then
+  #    echo "Detected new USB/IEEE1394 storage devices...  scanning all LUNs."
+  #    echo "(to skip, give a 'noscanluns' kernel option at boot)"  
+  #    #sleep 5
+  #    sh /sbin/rescan-scsi-bus -l
+  #    #sleep 1
+  #  fi
+  #fi
+  #unset SCAN
 
-# Check /proc/partitions again:
-/dev/makedevs.sh
+  # Re-assemble RAID volumes:
+  /sbin/mdadm -E -s > /etc/mdadm.conf
+  /sbin/mdadm -S -s
+  /sbin/mdadm -A -s
+  # This seems to make the kernel see partitions more reliably:
+  fdisk -l /dev/md* 1> /dev/null 2> /dev/null
 
-# Create LVM nodes:
-/dev/devmap_mknod.sh
+  # Check /proc/partitions again:
+  /dev/makedevs.sh
+
+  # Create LVM nodes:
+  /dev/devmap_mknod.sh
 
 fi # End Run udev:
+
+# Here's the situation.  Because of the practice of keeping the local
+# time (rather than UTC) in the system's clock, at any given time half
+# of the people doing an install will be creating files that upon
+# reboot will appear to have been created in the future.
+#
+# There are a lot of things that aren't happy when that happens.  The
+# one that screams the most loudly is e2fsck, and we don't want to
+# anger that!  Sometimes it even proceeds to check the partitions just
+# to be sure the user is fully punished.
+#
+# But, there's a simple solution.  If we set the (temporary) Linux clock
+# to yesterday (-24h), then there's no way that could occur.  Everything
+# on the system will be in the past (but not too far in the past).
+# Since files will quickly be put into use and given the correct after
+# reboot, this really shouldn't have a negative impact.  Plus, it affects
+# only newly created files during installation -- any file shipped in a
+# package will have an accurate time of creation.  (for its timezone ;-)
+#
+# Update:  We have to use 2 days ago, or chroot()+timezone offset might
+# still be in the future...  <sigh>
+#
+touch /.today
+/bin/sh /sbin/fakedate
 
 if [ -x /etc/rc.d/rc.inet1 ]; then
   /bin/sh /etc/rc.d/rc.inet1
@@ -167,6 +167,10 @@ vgscan --mknodes 2> /tmp/foo
 cat /tmp/foo | uniq
 rm -f /tmp/foo
 
+if [ -x /etc/rc.d/rc.font ]; then
+  /bin/sh /etc/rc.d/rc.font
+fi
+
 # Don't automatically blank the screen, or it will go black during the install
 # process when stray keystrokes might be dangerous:
 /bin/setterm -blank 0
@@ -177,6 +181,8 @@ for ARG in `cat /proc/cmdline` ; do
     BMAP="`echo $ARG | cut -f2 -d=`.bmap"
     tar xzOf /etc/keymaps.tar.gz $BMAP | loadkmap
     unset BMAP
+  else
+    /bin/sh /etc/rc.d/rc.keymap
   fi 
 done
 

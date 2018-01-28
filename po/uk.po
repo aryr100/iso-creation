@@ -1,0 +1,1881 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Didier Spaier <didier@slint.fr>, 2014
+# Dima <whoknows2012@myopera.com>, 2013
+# Oleh, 2014,2016
+# Oleh <aalesshhkka@gmail.com>, 2014
+# gapan <vlahavas@gmail.com>, 2016
+# Yarema aka Knedlyk <yupadmin@gmail.com>, 2016
+# Кісіль Андрій <kisilams@gmail.com>, 2013
+# Микола Ткач <znadibnyk@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Salix\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-08 18:53+0300\n"
+"PO-Revision-Date: 2017-09-22 23:42+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"Language-Team: Ukrainian (http://www.transifex.com/gapan/salix/language/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../initrd-scripts/usr-lib-setup/setup:51
+msgid "WELCOME TO THE SALIX INSTALLATION"
+msgstr "ЗАПРОШУЄМО ДО ВСТАНОВЛЕННЯ SALIX"
+
+#: ../initrd-scripts/usr-lib-setup/setup:52
+msgid "Keep the current keymap"
+msgstr "Залишити поточну розкладку"
+
+#: ../initrd-scripts/usr-lib-setup/setup:53
+msgid "Select another keymap"
+msgstr "Вибрати іншу розкладку"
+
+#: ../initrd-scripts/usr-lib-setup/setup:54
+#, sh-format
+msgid ""
+"Welcome to the installation of Salix, The Bonsai OS!\n"
+"Before you proceed with the rest of the installation, you might want to select your keyboard map (keymap). The current keymap is $KMAP."
+msgstr "Вітаємо Вас у процедурі встановлення Salix,  Bonsai OS!\nПеред початком встановлення виберіть бажану розкладку клавіатури (keymap). Поточна розкладка є $KMAP."
+
+#: ../initrd-scripts/usr-lib-setup/setup:63
+msgid "Salix Installation"
+msgstr "Встановлення Salix"
+
+#: ../initrd-scripts/usr-lib-setup/setup:64
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:117
+#: ../initrd-scripts/usr-lib-setup/SeTkeymap:20
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:323
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:414
+msgid "Select"
+msgstr "Вибір"
+
+#: ../initrd-scripts/usr-lib-setup/setup:65
+msgid "Exit installation"
+msgstr "Вийти з встановлення"
+
+#: ../initrd-scripts/usr-lib-setup/setup:67
+msgid "You may now proceed with the installation by pressing the ENTER key."
+msgstr "Тепер Ви можете перейти до встановлення, натиснувши кнопку ВВІД."
+
+#: ../initrd-scripts/usr-lib-setup/setup:69
+msgid ""
+"If you want to exit the installation and drop to a linux console, select "
+"'Exit installation'"
+msgstr "Якщо Ви бажаєте вийти з встановлення і перейти до консолі linux, тоді виберіть 'Вийти з встановлення'"
+
+#: ../initrd-scripts/usr-lib-setup/setup:71
+msgid "Install Salix using a step-by-step guide"
+msgstr "Встановлення Salix, використовуючи допомогу крок-за-кроком"
+
+#: ../initrd-scripts/usr-lib-setup/setup:96
+msgid "NO LINUX PARTITIONS DETECTED"
+msgstr "НЕ ВИЯВЛЕНО РОЗДІЛІВ LINUX"
+
+#: ../initrd-scripts/usr-lib-setup/setup:97
+msgid ""
+"There don't seem to be any Linux partitions on this machine. You'll need to "
+"make at least one of these to install Linux. Either select AUTOINSTALL from "
+"the menu, or select INSTALL and use the partition editor to create one."
+msgstr "Здається, що на цьому комп'ютері немає жодного розділу Linux. Вам потрібно створити хоча б один з цих для встановлення Linux. Виберіть з меню або АВТОВСТАНОВЛЕННЯ, або виберіть ВСТАНОВЛЕННЯ і використайте редактор розділів для створення розділу."
+
+#: ../initrd-scripts/usr-lib-setup/setup:105
+msgid "NO EFI SYSTEM PARTITION DETECTED"
+msgstr "СИСТЕМНИЙ РОЗДІЛ EFI НЕ ВИЯВЛЕНО"
+
+#: ../initrd-scripts/usr-lib-setup/setup:106
+msgid ""
+"This machine appears to be using EFI/UEFI, but no EFI System Partition was "
+"found."
+msgstr "Здається, що цей комп'ютер використовує EFI/UEFI, однак системного розділу EFI не знайдено."
+
+#: ../initrd-scripts/usr-lib-setup/setup:109
+msgid ""
+"You'll need to make an EFI System Partition in order to boot from the hard "
+"drive."
+msgstr "Вам потрібно створити системний розділ EFI, щоб завантажитись з твердого диску."
+
+#: ../initrd-scripts/usr-lib-setup/setup:128
+msgid "Can't umount /var/log/mount.  Reboot machine and run setup again."
+msgstr "Неможливо відмонтувати /var/log/mount/. Перезавантажте комп'ютер і запустіть налаштування знову."
+
+#: ../initrd-scripts/usr-lib-setup/setup:135
+msgid "Mount table corrupt.  Reboot machine and run setup again."
+msgstr "Таблиця монтувань пошкоджена. Перезавантажте комп'ютер і запустіть налаштування знову."
+
+#: ../initrd-scripts/usr-lib-setup/setup:168
+msgid "No Source Selected"
+msgstr "Не вибрано джерело"
+
+#: ../initrd-scripts/usr-lib-setup/setup:169
+msgid "The installer does not know where to find the source packages..."
+msgstr "Встановлювач не знає, де знайти джерело пакунків..."
+
+#: ../initrd-scripts/usr-lib-setup/setup:170
+#: ../initrd-scripts/usr-lib-setup/setup:188
+msgid "Press ENTER to return to the main menu."
+msgstr "Натисніть ВВІД для повернення в головне меню."
+
+#: ../initrd-scripts/usr-lib-setup/setup:179
+msgid "CANNOT INSTALL SOFTWARE YET"
+msgstr "ВСТАНОВЛЕННЯ ПРОГРАМ ВСЕ ЩЕ НЕМОЖЛИВЕ"
+
+#: ../initrd-scripts/usr-lib-setup/setup:180
+msgid "Before you can install software, complete the following tasks:"
+msgstr "Перед встановленням програмного забезпечення завершіть наступні завдання:"
+
+#: ../initrd-scripts/usr-lib-setup/setup:182
+msgid "Select your source media."
+msgstr "Виберіть джерело, з якого встановлювати."
+
+#: ../initrd-scripts/usr-lib-setup/setup:183
+msgid "Set up your target Linux partition(s)."
+msgstr "Встановіть цільовий розділ(и) Linux."
+
+#: ../initrd-scripts/usr-lib-setup/setup:185
+msgid ""
+"You may also optionally remap your keyboard and set up your swap "
+"partition(s)."
+msgstr "Ви також можете вказати розкладку і встановити розділ(и) підкачки."
+
+#: ../initrd-scripts/usr-lib-setup/setup:199
+#: ../initrd-scripts/usr-lib-setup/setup:214
+#: ../initrd-scripts/usr-lib-setup/setup:236
+#: ../initrd-scripts/usr-lib-setup/slackinstall:147
+msgid "CORE"
+msgstr "ОСНОВНИЙ"
+
+#: ../initrd-scripts/usr-lib-setup/setup:201
+#: ../initrd-scripts/usr-lib-setup/setup:218
+msgid "SELECT INSTALLATION MODE"
+msgstr "ВИБІР РЕЖИМУ ВСТАНОВЛЕННЯ"
+
+#: ../initrd-scripts/usr-lib-setup/setup:203
+#: ../initrd-scripts/usr-lib-setup/setup:221
+msgid "Please select the installation mode you prefer from the following:"
+msgstr "Будь ласка, виберіть бажаний режим встановлення з наступних:"
+
+#: ../initrd-scripts/usr-lib-setup/setup:205
+#: ../initrd-scripts/usr-lib-setup/setup:226
+msgid ""
+"BASIC will only install a minimal graphical environment and a web browser."
+msgstr "БАЗОВИЙ режим встановлює тільки мінімальне графічне середовище і веб-переглядач."
+
+#: ../initrd-scripts/usr-lib-setup/setup:207
+#: ../initrd-scripts/usr-lib-setup/setup:228
+msgid ""
+"CORE will install only the minimum essentials for your system to start in "
+"console mode (no graphical environment included) and is ideal if you are an "
+"experienced user and want to fully customize your installation for any "
+"specific purpose."
+msgstr "ОСНОВНИЙ режим встановлює тільки мінімум важливих програм для Вашої системи для початкової роботи в консольному режимі (графічне середовище не включене) і є ідеальним для досвідченого користувача, який бажає повністю підлаштувати систему для своїх потреб."
+
+#: ../initrd-scripts/usr-lib-setup/setup:213
+#: ../initrd-scripts/usr-lib-setup/setup:235
+msgid "BASIC"
+msgstr "БАЗОВИЙ"
+
+#: ../initrd-scripts/usr-lib-setup/setup:213
+#: ../initrd-scripts/usr-lib-setup/setup:235
+msgid "Install a minimal graphical environment"
+msgstr "Встановлення мінімального графічного середовища"
+
+#: ../initrd-scripts/usr-lib-setup/setup:214
+#: ../initrd-scripts/usr-lib-setup/setup:236
+msgid "Install a minimal console system"
+msgstr "Встановлення мінімальної консольної системи"
+
+#: ../initrd-scripts/usr-lib-setup/setup:223
+msgid ""
+"FULL (default) will install everything. That includes one application per "
+"task, such as an office suite, a multimedia player, a CD/DVD burner etc."
+msgstr "ПАВНИЙ (типовий) режим встановить все. Він включає одну програму на одне завдання, такі як офісні програми, програвач медіа, CD/DVD записувач, етс."
+
+#: ../initrd-scripts/usr-lib-setup/setup:234
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:138
+#: ../initrd-scripts/usr-lib-setup/slackinstall:162
+msgid "FULL"
+msgstr "ПОВНИЙ"
+
+#: ../initrd-scripts/usr-lib-setup/setup:234
+msgid "Install everything"
+msgstr "Встановлення всього"
+
+#: ../initrd-scripts/usr-lib-setup/setup:262
+msgid "REPLACE /etc/fstab?"
+msgstr "ЗАМІНИТИ /etc/fstab?"
+
+#: ../initrd-scripts/usr-lib-setup/setup:263
+msgid "You already have an /etc/fstab on your install partition."
+msgstr "Ви вже маєте файл /etc/fstab на Вашому розділі встановлення."
+
+#: ../initrd-scripts/usr-lib-setup/setup:266
+msgid ""
+"If you were just adding software, you should probably keep your old "
+"/etc/fstab."
+msgstr "Якщо Ви бажаєте тільки додати пакунки, тоді Вам бажано зберегти старий /etc/fstab."
+
+#: ../initrd-scripts/usr-lib-setup/setup:269
+msgid ""
+"If you've changed your partitioning scheme, you should use the new "
+"/etc/fstab."
+msgstr "Якщо Ви змінили Вашу схему розділів, тоді потрібно використати новий /etc/fstab."
+
+#: ../initrd-scripts/usr-lib-setup/setup:272
+msgid "Do you want to replace your old /etc/fstab with the new one?"
+msgstr "Ви бажаєте замінити старий /etc/fstab новим?"
+
+#: ../initrd-scripts/usr-lib-setup/setup:336
+#: ../initrd-scripts/usr-lib-setup/setup:343
+msgid "SALIX INSTALLATION IS COMPLETE"
+msgstr "ВСТАНОВЛЕННЯ SALIX ЗАКІНЧЕНО"
+
+#: ../initrd-scripts/usr-lib-setup/setup:337
+#: ../initrd-scripts/usr-lib-setup/setup:344
+msgid "Reboot now"
+msgstr "Перезавантажити зараз"
+
+#: ../initrd-scripts/usr-lib-setup/setup:338
+#: ../initrd-scripts/usr-lib-setup/setup:345
+msgid "Exit to command line"
+msgstr "Повернутися до командної стрічки"
+
+#: ../initrd-scripts/usr-lib-setup/setup:339
+msgid ""
+"System configuration and installation is complete. Please remove the "
+"installation disc. You can either select to reboot your system now or choose"
+" to exit the installation to the command line if you would like to do any "
+"manual tweaking."
+msgstr "Налаштування системи і встановлення завершені. Будь ласка, вийміть диск встановлення. Ви можете або перевантажити систему зараз, або вийти з встановлення до режиму командної стрічки, якщо бажаєте зробити ще якісь налаштування вручну."
+
+#: ../initrd-scripts/usr-lib-setup/setup:346
+msgid ""
+"System configuration and installation is complete. You can either select to "
+"reboot your system now or choose to exit the installation to the command "
+"line if you would like to do any manual tweaking."
+msgstr "Налаштування системи і встановлення завершені. Ви можете або перевантажити систему зараз, або вийти з встановлення до режиму командної стрічки, якщо бажаєте зробити ще якісь налаштування вручну."
+
+#: ../initrd-scripts/usr-lib-setup/INCISO:19
+msgid "Setup has found an ISO image in the source directory:"
+msgstr "Знайдено образ ISO в джерельній теці:"
+
+#: ../initrd-scripts/usr-lib-setup/INCISO:23
+msgid "Do you want to use this image as an installationsource?"
+msgstr "Ви бажаєте використати цей образ як джерело встановлення?"
+
+#: ../initrd-scripts/usr-lib-setup/INCISO:28
+msgid "USE ISO IMAGE"
+msgstr "ВИКОРИСТОВУЙТЕ ISO ОБРАЗ"
+
+#: ../initrd-scripts/usr-lib-setup/INCISO:35
+msgid "Setup has found ISO images in the source directory."
+msgstr "Знайдено образ ISO в джерельній теці."
+
+#: ../initrd-scripts/usr-lib-setup/INCISO:38
+msgid "Select an image if you want to use it as an installation source."
+msgstr "Виберіть образ, якщо Ви бажаєете використати його як джерело встановлення."
+
+#: ../initrd-scripts/usr-lib-setup/INCISO:54
+msgid "Mounting ISO image..."
+msgstr "Монтування образу ISO..."
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:14
+msgid "SCANNING FOR CD or DVD DRIVE"
+msgstr "ПЕРЕВІРЯЮ НАЯВНІСТЬ CD АБО DVD ПРИСТРОЮ"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:15
+msgid ""
+"Make sure the Salix disc is in your CD/DVD drive, and then press ENTER to "
+"begin the scanning process. Or, if you'd rather specify the device name "
+"manually (experts only), choose that option below."
+msgstr "Переконайтесь, що диск з Salix міститься пристрої CD/DVD, тоді натисніть ВВІД, щоб почати процес сканування. Або ж, якщо Ви вказали назву пристрою вручну (тільки експерти), виберіть цю опцію нижче."
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:20
+msgid "Scan for the CD or DVD drive (recommended)"
+msgstr "Перевірка на присутність CD чи DVD диску (рекомендується)"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:21
+msgid "Manually specify CD or DVD by device name"
+msgstr "Вкажіть CD або DVD за ім’ям пристрою"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:30
+msgid "MANUAL CD/DVD DEVICE SELECTION"
+msgstr "РУЧНИЙ ВИБІР CD/DVD ПРИСТРОЮ"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:31
+msgid ""
+"Please select your CD/DVD device from the list below.  If you don't see your"
+" device listed, choose 'custom'.  This will let you type in any device name."
+" (and if necessary, will create the device)"
+msgstr "Будь ласка, оберіть ваш CD/DVD пристрій з переліку нижче. Якщо ви не знаходите пристрій у переліку, оберіть 'спеціальний'. Це дозволить вам надрукувати будь-яке ім'я пристрою (і, якщо необхідно, створить пристрій)"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:36
+msgid "Type in the CD or DVD device to use"
+msgstr "Надрукуйте CD або DVD пристрій задля використання"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:37
+msgid "First CD/DVD drive"
+msgstr "Перший CD/DVD пристрій"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:38
+msgid "Second CD/DVD drive"
+msgstr "Другий CD/DVD пристрій"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:39
+msgid "Third CD/DVD drive"
+msgstr "Третій CD/DVD пристрій"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:40
+msgid "Fourth CD/DVD drive"
+msgstr "Четвертий CD/DVD пристрій"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:41
+msgid "First parallel port ATAPI CD"
+msgstr "Перший паралельний порт ATAPI CD"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:42
+msgid "Second parallel port ATAPI CD"
+msgstr "Другий паралельний порт ATAPI CD"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:43
+msgid "Third parallel port ATAPI CD"
+msgstr "Третій паралельний порт ATAPI CD"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:44
+msgid "Fourth parallel port ATAPI CD"
+msgstr "Четвертий паралельний порт ATAPI CD"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:45
+msgid "Non-IDE Aztech CD/DVD"
+msgstr "Не IDE Aztech CD/DVD"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:46
+msgid "Sony CDU-535 CD/DVD"
+msgstr "Sony CDU-535 CD/DVD"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:47
+msgid "Non-IDE GoldStar CD/DVD"
+msgstr "Не IDE GoldStar CD/DVD"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:48
+msgid "Sony CDU-31a CD/DVD"
+msgstr "Sony CDU-31a CD/DVD"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:49
+msgid "Optics Storage CD/DVD"
+msgstr "Оптичний пристрій зберігання CD/DVD"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:50
+msgid "Sanyo non-IDE CD/DVD"
+msgstr "Sanyo псевдо-IDE CD/DVD"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:51
+msgid "Non-IDE Mitsumi drive 1"
+msgstr "Псевдо-IDE Mitsumi пристрій 1"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:52
+msgid "Non-IDE Mitsumi drive 2"
+msgstr "Псевдо-IDE Mitsumi пристрій 2"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:53
+msgid "Old non-IDE SoundBlaster CD/DVD"
+msgstr "Застарілий псевдо-"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:54
+msgid "Philips LMS CM-205 CD/DVD"
+msgstr "Philips LMS CM-205 CD/DVD"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:55
+msgid "Philips LMS CM-206 CD/DVD"
+msgstr "Philips LMS CM-206 CD/DVD"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:56
+msgid "Old non-IDE Mitsumi CD/DVD"
+msgstr "Застарілий псевдо-"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:65
+msgid "ENTER CD/DVD DEVICE MANUALLY"
+msgstr "УВЕДІТЬ CD/DVD ПРИСТРІЙ ВРУЧНУ"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:66
+msgid ""
+"Please enter the name of the CD/DVD device (such as /dev/hdc) that you wish "
+"to use to mount the Salix CD/DVD:"
+msgstr "Будь ласка, введіть назву пристрою CD/DVD (наприклад /dev/hdc), який Ви бажаєте використати для монтування Salix CD/DVD:"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:77
+msgid "MKNOD CD/DVD DEVICE"
+msgstr "MKNOD ПРИСТРОЮ CD/DVD"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:78
+#, sh-format
+msgid ""
+"There doesn't seem to be a device by the name of $DRIVE_FOUND in the /dev "
+"directory, so we will have to create it using the major and minor numbers "
+"for the device.  If you're using a bootdisk with a custom CD/DVD driver on "
+"it, you should be able to find these numbers in the documentation.  Also, "
+"see the 'devices.txt' file that comes with the Linux kernel source.  If you "
+"don't know the numbers, you'll have to hit Esc to abort. Enter the major and"
+" minor numbers for the new device, separated by one space:"
+msgstr "Схоже, що пристрою з іменем $DRIVE_FOUND немає у директорії /dev, тому ми повинні створити його, використовуючи головні та другорядні номери для пристрою. Якщо Ви використовуєте завантажувальний диск з нетиповим CD/DVD драйвером на ньому, то маєте знайти ці числа у документації. Також, перегляньте файл 'devices.txt', який постачається разом із джерельним кодом ядра Linux. Якщо ж Ви не знаєте чисел, тоді Вам доведеться натиснути Esc для скасування. Уведіть головні та другорядні числа для нового пристрою розділені одним пробілом:"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:93
+msgid "MAKING DEVICE IN /dev"
+msgstr "СТВОРЮЮ ПРИСТРІЙ У /dev"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:98
+msgid "MKNOD FAILED"
+msgstr "MKNOD ЗАЗНАВ НЕВДАЧІ"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:99
+msgid ""
+"Sorry, but the mknod command failed to make the device.  You'll need to go "
+"back and try selecting your source media again.  Press ENTER to abort the "
+"source media selection process."
+msgstr "Вибачте, але mknod зазнав невдачі при спробі створити пристрій. Вам потрібно повернутися назад та спробувати обрати пристрій-джерело знову. Натисніть ENTER для скасування процесу вибору пристрою-джерела."
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:114
+#: ../initrd-scripts/usr-lib-setup/INSCD:131
+#: ../initrd-scripts/usr-lib-setup/INSCD:151
+msgid "SCANNING"
+msgstr "СКАНУВАННЯ"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:114
+msgid "Scanning for a CD/DVD drive containing a Salix disc..."
+msgstr "Сканування пристрою CD/DVD, який містить диск Salix..."
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:131
+msgid ""
+"Scanning for a parallel port ATAPI CD/DVD drive containing a Salix disc..."
+msgstr "Сканування паралельного порту пристрою ATAPI CD/DVD, який містить диск Salix..."
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:151
+msgid ""
+"No IDE/SCSI drive, so we will try scanning for CD drives on old proprietary interfaces, such as SoundBlaster pre-IDE CD drives, Sony CDU-31a, Sony 535, old Mitsumi pre-IDE, old Optics, etc.  For this scan to work at all, you'll need to be using a bootdisk that supports your CD drive.\n"
+"\n"
+"Please press ENTER to begin this last-chance scan for old, obsolete hardware."
+msgstr "Не знайдено жодних пристроїв IDE/SCSI, тому ми спробуємо просканувати старі пропрієтарні інтерфейси на предмет наявності CD пристроїв, таких як псевдо-IDE CD пристрої від SoundBlaster, Sony CDU-31a, Sony 535, старих до-IDE Mitsumi, старих Optics та таке інше. Для того, аби сканування працювало, Вам потрібно використовувати завантажувальний диск, який підтримує Ваш CD пристрій.\n\nБудь ласка, натисніть ENTER, аби розпочати пошук цього старого, морально застарілого обладнання."
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:174
+msgid "CD/DVD DRIVE NOT FOUND"
+msgstr "CD/DVD ПРИСТРІЙ НЕ ЗНАЙДЕНО"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:175
+msgid ""
+"A CD/DVD drive could not be found on any of the devices that were scanned.  "
+"Possible reasons include using a bootdisk or kernel that doesn't support "
+"your drive, failing to pass parameters needed by some drives to the kernel, "
+"not having the Salix disc in your CD/DVD drive, or using a drive connected "
+"to a Plug and Play soundcard (in this case, connecting the drive directly to"
+" the IDE interface often helps). Please make sure you are using the correct "
+"bootdisk for your hardware, consult the BOOTING file for possible "
+"information on forcing the detection of your drive, and then reattempt "
+"installation.  If all else fails, see FAQ.TXT for information about copying "
+"parts of this CD to your DOS partition and installing it from there."
+msgstr "Неможливо знайти пристрій CD/DVD серед усіх пристроїв, які були проскановані. Серед можливих причин можуть бути такі: завантажувальний диск або ядро не підтримують Ваш пристрій, помилка передачі параметрів ядру, які потрібні Вашому пристрою, немає диску Salix у Вашому пристрої CD/DVD, або Ви використовуєте пристрій, під'єднаний за допомогою Plug and Play до звукової карти (в цьому випадку доцільно під'єднювати пристрій безпосередньо до інтерфейсу IDE). Будь ласка, впевніться, що Ви використовуєте правильний завантажувальний диск для Вашої конфігурації комп'ютера, загляньте до файлу BOOTING щодо інформації про вимушене розпізнавання Вашого пристрою, а тоді спробуйте знову процес встановлення. Якщо ж і це не допоможе, перегляньте файл FAQ.TXT щодо інформації про копіювання частини цього CD на Ваш розділ DOS і встановлення з нього."
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:187
+msgid ""
+"You will now be returned to the main menu.  If you want to try looking for "
+"the CD again, you may skip directly to the SOURCE menu selection."
+msgstr "Тепер Ви повернетеся до основного меню. Якщо Ви бажаєте пошукати CD знову, Вам потрібно перейти безпосередньо до вибору меню ДЖЕРЕЛО."
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:197
+msgid "CD/DVD DRIVE FOUND"
+msgstr "ЗНАЙДЕНО CD/DVD ПРИСТРІЙ"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:198
+#, sh-format
+msgid "A Salix disc was found in device $DRIVE_FOUND."
+msgstr "Знайдено диск Salix знайдено в пристрої $DRIVE_FOUND."
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:201
+msgid "MOUNT ERROR"
+msgstr "ПОМИЛКА МОНТУВАННЯ"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:201
+#, sh-format
+msgid ""
+"There was an error attempting to mount the CD/DVD on $DRIVE_FOUND.  Maybe "
+"the device name is incorrect, the disc is not in the drive, or the kernel "
+"you are using does not support the device. (possibly an incorrect bootdisk) "
+"What would you like to do now?"
+msgstr "Трапилася помилка при спробі змонтувати CD/DVD на $DRIVE_FOUND.\nМожливо ім’я пристрою невірне, відсутній диск у пристрої чи ядро яке ви використовуєте не підтримує пристрій (можливо невірний завантажувальний диск).\nЩо ви хочете зробити?"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:208
+msgid "Abort CD installation"
+msgstr "Скасувати встановлення з CD."
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:209
+msgid "Attempt to mount the CD/DVD device again"
+msgstr "Спробувати знову змонтувати CD/DVD пристрій."
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:210
+msgid "Ignore the error and continue"
+msgstr "Проігнорувати помилку та продовжити "
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:222
+#, sh-format
+msgid "ATTEMPTING TO MOUNT CD/DVD on $DRIVE_FOUND"
+msgstr "ПРОБУЮ ЗМОНТУВАТИ CD/DVD на $DRIVE_FOUND"
+
+#: ../initrd-scripts/usr-lib-setup/INSCD:223
+#, sh-format
+msgid "Attempting to mount your CD/DVD again with the following command:"
+msgstr "Проба змонтувати Ваш CD/DVD знову з наступною командою:"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:23
+msgid ""
+"Good! We're all set on the local end, but now we need to know where to find "
+"the software packages to install.  First, we need the IP address of the "
+"machine where the Salix sources are stored."
+msgstr "Добре! Ми вже майже підійшли до закінчення, але нам ще потрібно знати, де можна знайти пакунки для встановлення. По перше, нам потрібна IP-адреса сервера, де містяться пакунки для Salix."
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:30
+#: ../initrd-scripts/usr-lib-setup/INSURL:72
+msgid ""
+"Since you're already running on the network, you should be able to use the "
+"hostname instead of an IP address if you wish."
+msgstr "Оскільки мережа вже налаштована, Ви можете, за бажанням, використати ім'я сервера замість його IP адреси."
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:35
+msgid "What is the IP address of your NFS server?"
+msgstr "Яка IP адреса вашого NFS сервера?"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:37
+msgid "ENTER IP ADDRESS OF NFS SERVER"
+msgstr "ВВЕДІТЬ IP АДРЕСУ NFS СЕРВЕРА"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:46
+#: ../initrd-scripts/usr-lib-setup/INSSMB:47
+#: ../initrd-scripts/usr-lib-setup/INSURL:86
+msgid ""
+"There must be a directory on the server with the Salix packages and files "
+"arranged in a tree like the FTP site."
+msgstr "На сервері повинна міститися тека з пакунками Salix і дерево файлів, як в на сторінці FTP. "
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:50
+msgid ""
+"The installation script needs to know the name of the directory on your "
+"server that contains the series' subdirectories. For example, if your A "
+"series is found at /stuff/salix/a, then you would respond: /stuff/salix"
+msgstr "Скрипт встановлення повинен знати назву теки на Вашому сервері, де містяться ряди підтек. Наприклад, якщо ряд A знайдено в /stuff/salix/a, тоді Вам потрібно ввести: /stuff/salix"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:55
+#: ../initrd-scripts/usr-lib-setup/INSSMB:55
+#: ../initrd-scripts/usr-lib-setup/INSURL:96
+msgid "What is the Salix source directory?"
+msgstr "Яка є джерельна тека Salix?"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:56
+#: ../initrd-scripts/usr-lib-setup/INSSMB:56
+#: ../initrd-scripts/usr-lib-setup/INSURL:97
+#: ../initrd-scripts/usr-lib-setup/INShd:123
+msgid "SELECT SOURCE DIRECTORY"
+msgstr "ОБЕРІТЬ КАТАЛОГ-ДЖЕРЕЛО"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:65
+msgid "In the next screen you should watch for NFS mount errors."
+msgstr "На наступному екрані Ви повинні побачити помилки монтування NFS."
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:68
+msgid ""
+"If you see errors and you don't see your NFS server listed, then try setting"
+" up NFS again."
+msgstr "Якщо Ви бачите помилки і не бачите в списку сервер NFS, тоді спробуйте налаштувати NFS знову."
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:71
+msgid "NFS MOUNT INFORMATION"
+msgstr "ІНФОРМАЦІЯ ПРО МОНТУВАННЯ NFS"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:80
+#, sh-format
+msgid "Mounting $REMOTE_PATH:"
+msgstr "Монтування $REMOTE_PATH:"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:85
+msgid "Didn't work."
+msgstr "Не працює."
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:87
+msgid "Maybe you should check that the directory name is correct?"
+msgstr "Можливо, Вам слід перевірити чи ім'я каталоґу правильне?"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:94
+msgid "Current NFS mounts:"
+msgstr "Поточний змонтований NFS:"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:98
+msgid "Do you need to try setting up NFS again?"
+msgstr "Вам знову потрібно спробувати налаштувати NFS?"
+
+#: ../initrd-scripts/usr-lib-setup/INSNFS:101
+#: ../initrd-scripts/usr-lib-setup/INSNFS:105
+msgid "NFS MOUNT RESULT"
+msgstr "РЕЗУЛЬТАТ МОНТУВАННЯ NFS"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:23
+msgid ""
+"Good! We're all set on the local end, but now we need to know where to find "
+"the software packages to install. First, we need the share address of the "
+"Samba server where the Salix sources are stored."
+msgstr "Добре! Ми вже майже підійшли до закінчення, але нам ще потрібно знати, де можна знайти пакунки для встановлення. По перше, нам потрібна адреса сервера Samba, де містяться пакунки для Salix."
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:28
+msgid "Example share address:"
+msgstr "Приклад адреси:"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:32
+msgid ""
+"Since you're already running on the network, you should be able to use the "
+"hostname instead of an IP address if you wish.\n"
+msgstr "Оскільки мережа вже налаштована, ви повинні бути у змозі, якщо бажаєте, користуватися іменем хосту замість IP адреси.\n"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:37
+msgid "What is the share address of your Samba server?"
+msgstr "Яка адреса сервера Samba?"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:38
+msgid "ENTER SHARE ADDRESS OF SAMBA SERVER"
+msgstr "ВВЕДІТЬ ПУБЛІЧНУ АДРЕСУ СЕРВЕРА "
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:50
+msgid ""
+"The installation script needs to know the name of the directory below your "
+"Samba share that contains the series subdirectories. For example, if your A "
+"series is found at /stuff/salix/a, then you would respond: /stuff/salix"
+msgstr "Скрипт встановлення повинен знати назву теки на сервері Samba, де містяться ряди підтек. Наприклад, якщо ряд A знайдено в /stuff/salix/a, тоді Вам потрібно ввести: /stuff/salix"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:65
+msgid "You should see no mount errors:"
+msgstr "В вас не повинно бути ніяких помилок монтування:"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:67
+#, sh-format
+msgid "Mounting $REMOTE_SHARE ..."
+msgstr "Монтування $REMOTE_SHARE ..."
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:73
+msgid "Mount failed."
+msgstr "Спроба монтування зазнала невдачі."
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:78
+msgid "Mounted Samba share(s):"
+msgstr "Монтування Samba директорії(й)"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:85
+msgid "A Salix package tree was found! Ready to continue."
+msgstr "Знайдено дерево пакунків Salix! Продовжуємо!"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:89
+msgid "No Salix package tree found at the indicated path!"
+msgstr "Не знайдено дерева пакунків за вказаним шляхом!"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:95
+msgid "Do you want to try setting up Samba again?"
+msgstr "Ви бажаєте знову спробувати налаштувати Samba?"
+
+#: ../initrd-scripts/usr-lib-setup/INSSMB:99
+#: ../initrd-scripts/usr-lib-setup/INSSMB:103
+msgid "MOUNT RESULT"
+msgstr "РЕЗУЛЬТАТ МОНТУВАННЯ"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:63
+msgid ""
+"Good! We're all set on the local end, but now we need to know where to find "
+"the software packages to install. First, we need the URL of the ftp or http "
+"server where the Salix sources are stored."
+msgstr "Добре! Ми вже майже підійшли до закінчення, але нам ще потрібно знати, де можна знайти пакунки для встановлення. По перше, нам потрібен URL ftp або http сервера, де містяться пакунки для Salix."
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:68
+msgid "URL examples are:"
+msgstr "Приклад URL:"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:76
+msgid "What is the URL of your FTP/HTTP server?"
+msgstr "Який URL Вашого сервера FTP/HTTP?"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:77
+msgid "ENTER URL OF FTP/HTTP SERVER"
+msgstr "ВВЕДІТЬ URL АДРЕСУ FTP/HTTP СЕРВЕРА"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:90
+msgid ""
+"The installation script needs to know the name of the directory on your "
+"server that contains the series subdirectories. For example, if your A "
+"series is found at /stuff/salix/a, then you would respond: /stuff/salix"
+msgstr "Скрипт встановлення повинен знати назву теки на Вашому сервері, де містяться ряди підтек. Наприклад, якщо ряд A знайдено в /stuff/salix/a, тоді Вам потрібно ввести: /stuff/salix"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:107
+msgid "In the next screen you should watch for possible errors."
+msgstr "На наступному екрані Ви повинні спостерігати за можливими помилками."
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:110
+msgid ""
+"First, we'll download the PACKAGES.TXT from the parent of the directory that you entered before (which should be the root of the remote Salix tree).  If that succeeds, then we use PACKAGES.TXT to reconstruct a local cache of the package tree (should take a minute or less on an average system).\n"
+"After that, we're all set to go!"
+msgstr "На початку ми звантажимо файл PACKAGES.TXT з кореня теки, яку Ви вказали перед тим (яка є коренем здального дерева тек Salix). Якщо все пройде добре, ми використаємо PACKAGES.TXT для реконструкції локального кешу дерева пакунків (триває хвилину або й менше на звичайній системі).\nПісля цього можемо продовжувати далі!"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:117
+msgid "Downloading PACKAGES.TXT at the Salix root starts after you press OK."
+msgstr "Звантаження файлу PACKAGES.TXT в корені  тек Salix почнеться після натиснення OK."
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:119
+msgid ""
+"That file is several hundreds of KB in size so it may take some time to get "
+"here..."
+msgstr "Цей фал має розмір кілька сотень КБ і його звантаження трохи потриває..."
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:121
+msgid "DOWNLOAD INFORMATION"
+msgstr "ІНФОРМАЦІЯ ПРО ЗАВАНТАЖЕННЯ"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:130
+msgid "Downloading PACKAGES.TXT ..."
+msgstr "Звантаження "
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:135
+msgid "> Download failed. Going to try one directory lower."
+msgstr "> Спроба завантаження зазнала невдачі. Збираюся спробувати на один каталог нижче."
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:141
+msgid "> Download failed again."
+msgstr "> Завантаження невдале знову."
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:148
+msgid "A Salix 'PACKAGES.TXT' is available. Ready to continue!"
+msgstr "Файл 'PACKAGES.TXT' для Salix доступний. Готові продовжувати!"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:153
+msgid "No file 'PACKAGES.TXT' was found. Wrong URL?"
+msgstr "Файлу 'PACKAGES.TXT' не знайдено. Неправильна URL?"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:158
+msgid "Do you want to try setting up FTP/HTTP again? "
+msgstr "Ви бажаєте спробувати налаштувати FTP/HTTP знову?"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:161
+#: ../initrd-scripts/usr-lib-setup/INSURL:165
+msgid "DOWNLOAD RESULT"
+msgstr "РЕЗУЛЬТАТ ЗАВАНТАЖЕННЯ"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:186
+#: ../initrd-scripts/usr-lib-setup/INSURL:226
+#: ../initrd-scripts/usr-lib-setup/INSURL:230
+msgid "INITIALIZING PACKAGE TREE"
+msgstr "ІНІЦІАЛІЗАЦІЯ ДЕРЕВА ПАКУНКІВ"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:187
+msgid "Setting up local cache for the FTP/HTTP server's package tree ...\n"
+msgstr "Підготовка локального кешу дерева пакунків з сервера FTP/HTTP...\n"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:227
+#, sh-format
+msgid "processing ${TOTALP} Salix packages..."
+msgstr "обробка ${TOTALP} пакунків Salix..."
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:231
+msgid ""
+"\n"
+"Retrieving tagfile information for the package tree ..."
+msgstr "\nОтримання інформації тегфайлів для дерева пакунків..."
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:239
+msgid "REMOTE SERVER CONFIGURATION"
+msgstr "НАЛАШТУВАННЯ ВІДДАЛЕНОГО СЕРВЕРА"
+
+#: ../initrd-scripts/usr-lib-setup/INSURL:240
+msgid "Failed to configure for installation from remote server."
+msgstr "Спроба налаштування встановлення з віддаленого сервера зазнала невдачі."
+
+#: ../initrd-scripts/usr-lib-setup/INSUSB:13
+msgid "SCANNING FOR USB STICK"
+msgstr "ПОШУК НОСІЯ USB"
+
+#: ../initrd-scripts/usr-lib-setup/INSUSB:14
+msgid ""
+"Make sure the USB stick containing the Salix package directory is inserted "
+"into a USB port, and then press ENTER to begin the scanning process."
+msgstr "Впевніться, що флешка USB з теками з пакунками Salix вставлена в порт USB, а тоді натисніть кнопку ВВІД для початку процесу сканування."
+
+#: ../initrd-scripts/usr-lib-setup/INSUSB:36
+msgid "NO REMOVABLE USB DEVICES FOUND"
+msgstr "ЗМІННІ ПРИСТРОЇ USB НЕ ВИЯВЛЕНО"
+
+#: ../initrd-scripts/usr-lib-setup/INSUSB:37
+msgid ""
+"Sorry, but no removable USB devices could be found.  Exiting back to the top"
+" menu."
+msgstr "Змінні пристрої USB не виявлено. Повертаємося у меню."
+
+#: ../initrd-scripts/usr-lib-setup/INSUSB:88
+msgid "NO SALIX DIRECTORY FOUND"
+msgstr "НЕ ЗНАЙДЕНО ТЕК SALIX"
+
+#: ../initrd-scripts/usr-lib-setup/INSUSB:89
+msgid ""
+"Sorry, but a Salix directory could not be found on any USB devices. Exiting "
+"back to the top menu."
+msgstr "Прикро, однак теки Salix не знайдено на жодному з USB пристроїв. Виходимо до головного меню."
+
+#: ../initrd-scripts/usr-lib-setup/INSUSB:98
+msgid "USB PACKAGE SOURCE FOUND"
+msgstr "ДЖЕРЕЛО ПАКУНКІВ НА USB ВИЯВЛЕНО"
+
+#: ../initrd-scripts/usr-lib-setup/INSUSB:99
+#, sh-format
+msgid "A Salix package directory was found on device $DRIVE_FOUND."
+msgstr "Теки пакунків Salix знайдено на пристрої $DRIVE_FOUND."
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:17
+#: ../initrd-scripts/usr-lib-setup/INShd:17
+msgid "Setup failed to unmount a required directory:"
+msgstr "Процес встановлення не зміг відмонтувати потрібну теку:"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:21
+msgid "Please reboot the machine and try again."
+msgstr "Перезавантажте комп'ютер і спробуйте знову."
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:24
+#: ../initrd-scripts/usr-lib-setup/INShd:23
+msgid "ERROR"
+msgstr "ПОМИЛКА"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:25
+#: ../initrd-scripts/usr-lib-setup/INShd:24
+msgid "REBOOT"
+msgstr "ПЕРЕЗАВАНТАЖЕННЯ"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:26
+#: ../initrd-scripts/usr-lib-setup/INShd:25
+msgid "CANCEL"
+msgstr "СКАСУВАТИ"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:40
+msgid ""
+"Please provide the path to a directory containing the contents (or an ISO "
+"image) of a Salix installation disc."
+msgstr "Будь ласка, введіть шлях до теки, яка містить вміст (або образ ISO) встановлювального диску Salix."
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:44
+msgid ""
+"Note: You may use any directory within the current filesystem except '/mnt' "
+"or '/var/log/mount' as these are required by setup."
+msgstr "Зауваження: Ви можете використати будь-яку теку з поточної файлової системи крім '/mnt' або '/var/log/mount', оскільки вони вимагаються встановленням."
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:49
+msgid "SELECT A PRE-MOUNTED DIRECTORY"
+msgstr "ВИБІР ВЖЕ ЗМОНТОВАНОЇ ТЕКИ"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:50
+#: ../initrd-scripts/usr-lib-setup/INShd:124
+msgid "Browse"
+msgstr "Перегляд"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:63
+#: ../initrd-scripts/usr-lib-setup/INShd:137
+msgid "SELECT A DIRECTORY"
+msgstr "ВИБІР ТЕКИ"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:85
+msgid "The ISO image you specified is not valid:"
+msgstr "Вибраний ISO-образ не підходить:"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:89
+#: ../initrd-scripts/usr-lib-setup/INSdir:114
+#: ../initrd-scripts/usr-lib-setup/INShd:185
+msgid "Please check and try again."
+msgstr "Перевірте, будь ласка, і спробуйте знову."
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:91
+#: ../initrd-scripts/usr-lib-setup/INShd:168
+msgid "INVALID ISO IMAGE"
+msgstr "ISO-ОБРАЗ НЕ ПІДХОДИТЬ"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:92
+#: ../initrd-scripts/usr-lib-setup/INSdir:118
+#: ../initrd-scripts/usr-lib-setup/INShd:93
+#: ../initrd-scripts/usr-lib-setup/INShd:107
+#: ../initrd-scripts/usr-lib-setup/INShd:169
+#: ../initrd-scripts/usr-lib-setup/INShd:188
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:540
+msgid "OK"
+msgstr "OK"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:109
+#: ../initrd-scripts/usr-lib-setup/INShd:181
+msgid "The directory you specified is not valid:"
+msgstr "Вибрана тека не підходить:"
+
+#: ../initrd-scripts/usr-lib-setup/INSdir:117
+#: ../initrd-scripts/usr-lib-setup/INShd:187
+msgid "INVALID SOURCE DIRECTORY"
+msgstr "НЕПРАВИЛЬНИЙ КАТАЛОГ-ДЖЕРЕЛО"
+
+#: ../initrd-scripts/usr-lib-setup/INShd:20
+msgid "Please reboot the machine an try again."
+msgstr "Перезавантажте комп'ютер і спробуйте знову."
+
+#: ../initrd-scripts/usr-lib-setup/INShd:39
+msgid ""
+"Please specify which partition on your hard disk or USB stick contains the "
+"contents (or an ISO image) of a Salix installation disc."
+msgstr "Будь ласка, вкажіть, який розділ на вашому твердому диску або USB флешки містить вміст (або образ ISO) встановлювального диску Salix."
+
+#: ../initrd-scripts/usr-lib-setup/INShd:43
+msgid "Example:"
+msgstr "Приклад:"
+
+#: ../initrd-scripts/usr-lib-setup/INShd:45
+msgid "Note: Use the <Partitions> button to list available partitions."
+msgstr "Зауваження: Використайте кнопку <Розділи> для списку доступних розділів."
+
+#: ../initrd-scripts/usr-lib-setup/INShd:48
+msgid "SELECT HARD DISK PARTITION"
+msgstr "ВИБІР РОЗДІЛУ ТВЕРДОГО ДИСКУ"
+
+#: ../initrd-scripts/usr-lib-setup/INShd:49
+msgid "Partitions"
+msgstr "Розділи"
+
+#: ../initrd-scripts/usr-lib-setup/INShd:61
+msgid "PARTITIONS LIST"
+msgstr "СПИСОК РОЗДІЛІВ"
+
+#: ../initrd-scripts/usr-lib-setup/INShd:92
+msgid "MOUNT FAILURE"
+msgstr "ВІДМОВА МОНТУВАННЯ"
+
+#: ../initrd-scripts/usr-lib-setup/INShd:106
+msgid "MOUNT SUCCESS"
+msgstr "МОНТУВАННЯ ВДАЛОСЯ"
+
+#: ../initrd-scripts/usr-lib-setup/INShd:115
+msgid ""
+"Now please provide the path to a directory containing the contents (or an "
+"ISO image) of a Salix installation disc."
+msgstr "Будь ласка, вкажіть шлях до теки, яка містить вміст (або образ ISO) встановлювального диску Salix."
+
+#: ../initrd-scripts/usr-lib-setup/INShd:118
+msgid ""
+"Note: The path you enter must be relative to the mount point. So, "
+"'/var/log/mount/salix-xfce' should be entered as '/salix-xfce'."
+msgstr "Зауваження: Шлях, яки потрібно ввести, повинен бути відносним шляхом до точки монтування. Так, '/var/log/mount/salix-xfce' повинен повинен бути введений як '/salix-xfce'."
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:28
+#, sh-format
+msgid "Setting permissions on NTFS partition $DOS_PART"
+msgstr "Встановлення прав доступу для NTFS розділу $DOS_PART"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:29
+#, sh-format
+msgid "SET SECURITY FOR NTFS PARTITION $DOS_PART"
+msgstr "ВСТАНОВЛЕННЯ РІВНЯ БЕЗПЕКИ ДЛЯ РОЗДІЛУ NTFS $DOS_PART"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:31
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:54
+#, sh-format
+msgid ""
+"Because users could go snooping through (or destroy, depending on the "
+"settings) your Windows partition, you should choose how much access would "
+"you like your non-root users to have to partition $DOS_PART.  The access "
+"level can range from no access at all, to read-only for everyone, to read-"
+"write access for every user on the machine.  A reasonable default (read-"
+"write for root only) is chosen, but you may set this any way that you like."
+msgstr "Оскільки користувачі можуть читати (або пошкодити, у залежності від налаштувань) розділ Windows, потрібно вибрати, настільки широкий доступ надавати не-root користувачам до розділу $DOS_PART. Можливі варіанти від повної відсутності доступу, доступу усім на читання або на читання та запис будь-якому користувачу машини. Вибрано розумні типові налаштування (читання та запис лише для root), але можете вказати, що забажаєте."
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:38
+msgid "Root has read/write access, users have no access (ntfs-3g)"
+msgstr "Root - читання/запис, користувачі - немає доступу (ntfs-3g)"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:39
+msgid "Everyone has read only access (built-in kernel ntfs driver)"
+msgstr "Усі - лише читання (драйвер ntfs, вбудований у ядро)"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:40
+msgid "Everyone has read access, but only root can write (ntfs-3g)"
+msgstr "Усі - лише читання, root - читання/запис (ntfs-3g)"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:41
+msgid "All users can read/write to any file (ntfs-3g)"
+msgstr "Усі - читання/запис будь-яких файлів (ntfs-3g)"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:51
+#, sh-format
+msgid "Setting permissions on FAT partition $DOS_PART"
+msgstr "Встановлення дозволів для розділу FAT $DOS_PART"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:52
+#, sh-format
+msgid "SET SECURITY FOR FAT PARTITION $DOS_PART"
+msgstr "ВСТАНОВЛЕННЯ РІВНЯ БЕЗПЕКИ ДЛЯ РОЗДІЛУ FAT $DOS_PART"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:61
+msgid "Root has read/write access, users have no access"
+msgstr "root - читання/запис, користувачі - немає доступу"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:62
+msgid "Everyone has read only access"
+msgstr "Усі - лише читання"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:63
+msgid "Everyone has read access, but only root can write"
+msgstr "Усі - лише читання, root - читання/запис"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:64
+msgid "All users can read/write to any file"
+msgstr "Усі - читання/запис будь-яких файлів"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:99
+msgid "Setting up non-Linux partitions."
+msgstr "Налаштування не-Linux розділів"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:100
+msgid "FAT or NTFS PARTITIONS DETECTED"
+msgstr "ВИЯВЛЕНО РОЗДІЛИ FAT/NTFS"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:101
+msgid ""
+"Partitions of type FAT or NTFS (commonly used by DOS and Windows) have been "
+"found on your system.  Would you like to add these partitions to your "
+"/etc/fstab so that these partitions are visible from Linux?"
+msgstr "У системі виявлено розділи FAT або NTFS (зазвичай використовуються DOS або Windows). Бажаєте додати ці розділи у /etc/fstab, щоб їх було видно з Linux?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:113
+msgid "Selecting non-Linux partitions."
+msgstr "Вибір не-Linux розділів."
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:115
+msgid "SELECT PARTITION TO ADD TO /etc/fstab"
+msgstr "ВИБІР РОЗДІЛУ ДЛЯ ДОДАВАННЯ У /etc/fstab"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:119
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:416
+msgid "Continue"
+msgstr "Продовжити"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:121
+msgid ""
+"In order to make these partitions visible from Linux, we  need to add them "
+"to your /etc/fstab.  Please pick a partition to  add to /etc/fstab, or "
+"select '---' to continue with the installation  process."
+msgstr "Щоб зробити ці розділи видимими з Linux, потрібно додати їх у /etc/fstab. Виберіть розділ для додавання у /etc/fstab або виберіть '---' для продовження встановлення."
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:140
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:164
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:200
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:443
+msgid "IN USE"
+msgstr "ВИКОРИСТОВУЄТЬСЯ"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:140
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:193
+msgid "on"
+msgstr "на"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:146
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:147
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:148
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:149
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:150
+msgid "done, continue with setup"
+msgstr "завершено, продовжити встановлення"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:185
+#, sh-format
+msgid "Selecting a location to mount $DOS_PART."
+msgstr "Вибір точки монтування $DOS_PART."
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:186
+#, sh-format
+msgid "PICK MOUNT POINT FOR $DOS_PART"
+msgstr "ВИБІР ТОЧКИ МОНТУВАННЯ ДЛЯ $DOS_PART"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:187
+#, sh-format
+msgid ""
+"Now this partition must be mounted somewhere in your  directory tree.  "
+"Please enter the directory under which  you would like to put it.  For "
+"instance, you might want to  enter /fat-c or /fat-d or something similar.   "
+"NOTE: This partition will not actually be mounted until you reboot.   Where "
+"would you like to mount $DOS_PART?"
+msgstr "Тепер цей розділ потрібно змонтувати кудись у дереві каталогів. Вкажіть каталог, до якого під’єднати розділ. Наприклад, можна вказати /fat-c, /fat-d або щось подібне. ПРИМІТКА: Цей розділ не буде змонтовано до перезавантаження. Вкажіть каталог для монтування $DOS_PART"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:216
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:73
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:535
+msgid "Adding this information to your /etc/fstab:"
+msgstr "Додавання цієї інформації до Вашого /etc/fstab:"
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:219
+msgid "Finished setting up non-Linux partitions."
+msgstr "Закінчено налаштування не-Linux розділів."
+
+#: ../initrd-scripts/usr-lib-setup/SeTDOS:220
+msgid "DONE ADDING FAT or NTFS PARTITIONS"
+msgstr "ЗАКІНЧЕНО ДОДАВАННЯ РОЗДІЛІВ FAT/NTFS"
+
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:44
+#, sh-format
+msgid "FORMAT EFI PARTITION ${PREFERRED_EFI_PARTITION}?"
+msgstr "ФОРМАТУВАТИ РОЗДІЛ EFI ${PREFERRED_EFI_PARTITION}?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:45
+#, sh-format
+msgid ""
+"An EFI System Partition was found on ${PREFERRED_EFI_PARTITION}, but it has "
+"not yet been formatted.  Would you like to format this partition?"
+msgstr "Виявлено системний розділ EFI ${PREFERRED_EFI_PARTITION}, але він не відформатований. Форматувати цей розділ?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:53
+#, sh-format
+msgid "FORMATTING EFI PARTITION ${PREFERRED_EFI_PARTITION}"
+msgstr "ФОРМАТУВАННЯ РОЗДІЛУ EFI ${PREFERRED_EFI_PARTITION}"
+
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:54
+#, sh-format
+msgid "Formatting EFI System Partition ${PREFERRED_EFI_PARTITION} as FAT32."
+msgstr "Форматується системний розділ EFI ${PREFERRED_EFI_PARTITION} у FAT32."
+
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:76
+msgid "Finished setting up EFI System Partition."
+msgstr "Налаштування системного розділу EFI закінчено."
+
+#: ../initrd-scripts/usr-lib-setup/SeTEFI:77
+msgid "EFI SYSTEM PARTITION RECOGNIZED"
+msgstr "СИСТЕМНИЙ РОЗДІЛ EFI ВИЯВЛЕНО"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:67
+msgid "DONE INSTALLING PACKAGES"
+msgstr "ВСТАНОВЛЕННЯ ПАКУНКІВ ЗАКІНЧЕНО"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:68
+msgid "Preparing to configure your new Linux system..."
+msgstr "Підготовка до налаштування вашої нової Linux системи..."
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:73
+msgid "Boot Loader"
+msgstr "Завантажувач"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:74
+msgid "Please choose the Boot Loader that you would like to use"
+msgstr "Будь ласка, виберіть Завантажувач, який Ви бажаєте використовувати"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:76
+msgid "Install Lilo"
+msgstr "Встановлення LILO"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:77
+msgid "Install Grub"
+msgstr "Встановлення Grub"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:78
+msgid "(Do not install boot loader)"
+msgstr "(Не встановлювати менеджер завантаження)"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:207
+msgid "Loading locales..."
+msgstr "Завантаження локалей..."
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:211
+msgid "Updating caches..."
+msgstr "Оновлення кешу..."
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:216
+msgid "Numlock configuration"
+msgstr "Налаштування numlock"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:217
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:230
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:239
+msgid "Enabled"
+msgstr "Включено"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:217
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:230
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:239
+msgid "Disabled"
+msgstr "Виключено"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:218
+msgid "Do you want to have numlock enabled or disabled on boot?"
+msgstr "Ви бажаєте мати numlock включеним чи виключеним при завантаженні?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:229
+msgid "IBus configuration"
+msgstr "Налаштування IBus"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:232
+msgid ""
+"IBus is an input platform for Chinese, Japanese, Korean and many other "
+"languages. Do you want to have it enabled or disabled on boot?"
+msgstr "IBus є платформою вводу для китайської, японської, корейської і багато інших мов. Ви бажаєте ввімкнути або вимкнути її при завантаженні? "
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:238
+msgid "SCIM configuration"
+msgstr "Налаштування SCIM"
+
+#: ../initrd-scripts/usr-lib-setup/SeTconfig:241
+msgid ""
+"SCIM is an input platform for Chinese, Japanese, Korean and many other "
+"languages. Do you want to have it enabled or disabled on boot?"
+msgstr "SCIM є платформою вводу для китайської, японської, корейської і багато інших мов. Ви бажаєте ввімкнути або вимкнути її при завантаженні? "
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:21
+msgid "Go"
+msgstr "Перейти"
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:22
+msgid "Exit"
+msgstr "Вийти"
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:23
+msgid "PARTITIONS EDITOR"
+msgstr "РЕДАКТОР РОЗДІЛІВ"
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:24
+msgid ""
+"Welcome to the Salix partition editor. Press <SPACE> to select a disk and "
+"select Go to start partitioning. If you don't want to alter the partition "
+"layout, select Exit."
+msgstr "Ласкаво просимо до редактора розділів Salix. Натисніть <Пробіл> для вибору диску і виберіть Вперед для початку розбивки. Якщо Ви не бажаєте змінювати структуру розділів, виберіть Вийти."
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:28
+msgid ""
+"NOTE: If you are planning to use BTRFS for your / filesystem, LILO the "
+"default boot loader will not be able to boot it. In that case, you will need"
+" a separate /boot partition with another filesystem."
+msgstr "ЗАУВАЖЕННЯ: Якщо Ви плануєте використовувати BTRFS для Вашої файлової системи / , тоді типовий менеджер завантаження LILO буде не в змозі її завантажити. У цьому випадку Вам потрібно мати окремий розділ /boot з іншою файловою системою."
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:33
+msgid "You usually need at least 2 partitions:"
+msgstr "Зазвичай Вам потрібно хоча б 2 розділи:"
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:34
+msgid "1 LINUX bootable partition (10GB minimum recommended)"
+msgstr "1 завантажувальний розділ LINUX (рекомендовано мінімум 10ГБ)"
+
+#: ../initrd-scripts/usr-lib-setup/SeTdisk:35
+msgid "1 SWAP partition (1GB minimum recommended)"
+msgstr "1 розділ SWAP (рекомендується мінімум 1ГБ)"
+
+#: ../initrd-scripts/usr-lib-setup/SeTfull:15
+msgid "ERROR: TARGET PARTITION FULL"
+msgstr "ПОМИЛКА: ЦІЛЬОВИЙ РОЗДІЛ ЗАПОВНЕНИЙ"
+
+#: ../initrd-scripts/usr-lib-setup/SeTfull:15
+msgid ""
+"Setup has detected that one or more of your target partitions has become "
+"full.  I'm sorry, but you will have to try installing again onto a partition"
+" or partitions with more free space.  You could also try selecting fewer "
+"packages to install.  Since there is no longer any space for setup to make "
+"its temporary files, this is an unrecoverable error.  Press control-alt-"
+"delete to reboot and try again.  Before doing that, you might want to switch"
+" to another console (Alt-F2) and use df (disk free utility) to see if you "
+"can get an idea of how to avoid this the next time around."
+msgstr "Програма встановлення виявила що один або більше цільових розділів заповнені. Мені шкода, але ви маєте спробувати запустити встановлення знову. Цього разу на розділ чи розділи з більшою к-тю вільного місця. Ви також можете спробувати обрати меншу к-ть пакетів для встановлення. Оскільки для встановлювача більше не залишилося вільного місця для створення тимчасових файлів, це невиправна помилка. Натисніть Сtrl-Alt-Delete для перезавантаження. Перед тим як це робити, ви можете переключитись на іншу консоль (Alt+F2)  і запустити df (утиліта для визначення вільного місця) для того щоб отримати уявлення про те як уникнути цю проблему наступного разу."
+
+#: ../initrd-scripts/usr-lib-setup/SeTkeymap:18
+msgid "KEYBOARD MAP SELECTION"
+msgstr "ВИБІР РОЗКЛАДКИ КЛАВІАТУРИ"
+
+#: ../initrd-scripts/usr-lib-setup/SeTkeymap:21
+#, sh-format
+msgid ""
+"You may select one of the following keyboard maps.  If you do not select a "
+"keyboard map, $DefaultKeyMap is the current value.  Use the UP/DOWN arrow "
+"keys and PageUp/PageDown to scroll through the whole list of choices."
+msgstr "Ви можете вибрати одну з наступних розкладок клавіатури. Якщо Ви не вибере розкладку коавіатури, тоді по замовчуванню буде $DefaultKeyMap. Використайте стрілки ВВЕРХ/ВНИЗ і PageUp/PageDown для ошляду всіх можливостей."
+
+#: ../initrd-scripts/usr-lib-setup/SeTkeymap:198
+msgid "Test keyboard map"
+msgstr "Тест розкладки клавіатури"
+
+#: ../initrd-scripts/usr-lib-setup/SeTkeymap:199
+msgid "Accept keymap"
+msgstr "Прийняти розкладку клавіатури"
+
+#: ../initrd-scripts/usr-lib-setup/SeTkeymap:200
+msgid "Reject keymap"
+msgstr "Не приймати розкладку клавіатури"
+
+#: ../initrd-scripts/usr-lib-setup/SeTkeymap:201
+msgid ""
+"You may now test the new keyboard map by typing some text. You can accept "
+"the keyboard map or reject it and select another one. The installer only "
+"supports ASCII characters, so don't try any special characters here or use "
+"them during installation!"
+msgstr "Ви можете протестувати нову розкладку клавіатури, друкуючи якийсь текст. Ви можете прийняти розкладку клавіатури або відмовитися від неї і вибрати іншу. Встановлювач підтримує тільки символи ASCII, тому не пробуйте тут жодних спеціальних символів і не використовуйте їх під час встановлення!"
+
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:11
+msgid "Select Salix installation source."
+msgstr "Вибір джерела встановлення Salix."
+
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:12
+msgid "SOURCE MEDIA SELECTION"
+msgstr "ОБРАТИ НОСІЙ-ДЖЕРЕЛО"
+
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:14
+msgid "Please select the media from which to install Salix Linux:"
+msgstr "Будь ласка, виберіть ресурс, з якого буде встановлений Salix Linux:"
+
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:16
+msgid "Install from a Salix USB stick"
+msgstr "Встановлення з флешки Salix USB"
+
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:17
+msgid "Install from a Salix CD or DVD"
+msgstr "Встановлення з Salix CD або DVD"
+
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:18
+msgid "Install from a hard drive partition"
+msgstr "Встановлення з розділу на жорсткому диску"
+
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:19
+msgid "Install from a pre-mounted directory"
+msgstr "Встановлення з попередньо змонтованого каталогу"
+
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:20
+msgid "Install from FTP/HTTP server"
+msgstr "Встановлення з сервера FTP/HTTP"
+
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:21
+msgid "Install from NFS (Network File System)"
+msgstr "Встановлення з NFS (мережева файлова система)"
+
+#: ../initrd-scripts/usr-lib-setup/SeTmedia:22
+msgid "Install from a Samba share"
+msgstr "Встановлення з сервера Samba"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:103
+msgid ""
+"\n"
+"You will now get a chance to probe your network interfaces.\n"
+msgstr "\nВи знову отримаєте шанс визначити ваші мережеві інтерфейси.\n"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:106
+#: ../initrd-scripts/usr-lib-setup/SeTnet:119
+msgid "PROBING NETWORK DEVICES"
+msgstr "ДОСЛІДЖЕННЯ МЕРЕЖЕВИХ ПРИСТРОЇВ"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:113
+msgid ""
+"\n"
+"Are you OK with the network interface which was detected? If not, select 'No' to get back to the network probe program. You can try to load another driver explicitly, by using 'P <driver_name>'.\n"
+"\n"
+"If you are satisfied, select 'Yes' to continue with network configuration."
+msgstr "\nНалаштовувати цей виявлений мережевий інтерфейс? Якщо ні, виберіть 'No' для повернення до дослідження мережевих пристроїв. Можете спробувати завантажити інший драйвер за допомогою 'P <ім’я_драйвера>'.\n\nЯкщо все влаштовує, виберіть 'Yes' для налаштування мережі."
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:135
+#: ../initrd-scripts/usr-lib-setup/SeTnet:291
+msgid "INITIALIZING NETWORK"
+msgstr "ІНІЦІАЛІЗАЦІЯ МЕРЕЖІ"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:136
+msgid ""
+"\n"
+"Waiting a few seconds for DHCP polling to settle ..."
+msgstr "\nЗачекайте декілька секунд, поки DHCP налаштує мережу..."
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:159
+msgid ""
+"You're running off the hard drive filesystem. Is this machine currently running on the network you plan to install from? If so, we won't try to reconfigure your ethernet card.\n"
+"\n"
+"Are you up-and-running on the network?"
+msgstr "Ви працюєте без файлової системи жорсткого диску. Ця машина на даний час працює по мережі, ви плануєте встановлення по ній? Якщо так, ми не будемо переналаштовувати вашу Ethernet-картку.Є ваша мережа працюючою?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:164
+#: ../initrd-scripts/usr-lib-setup/SeTnet:284
+msgid "NETWORK CONFIGURATION"
+msgstr "НАЛАШТУВАННЯ МЕРЕЖІ"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:173
+#, sh-format
+msgid ""
+"\n"
+"I can configure your network interface $ENET_DEVICE fully automatically using DHCP. If you want this, please select 'yes'.\n"
+"\n"
+"If you select 'no' instead, then you will be able to assign the IP address, netmask and gateway manually.\n"
+msgstr "\nМожливе автоматичне налаштування мережевого інтерфейсу $ENET_DEVICE за допомогою DHCP. Для його виконання виберіть 'yes'.\n\nДля призначення вручну адреси IP, мережевої маски та шлюзу, виберіть 'no'.\n"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:180
+msgid "DHCP CONFIGURATION"
+msgstr "НАЛАШТУВАННЯ DHCP"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:205
+msgid ""
+"\n"
+"You will need to enter the IP address you wish to assign to this machine. Example: 111.112.113.114\n"
+"\n"
+"What is your IP address?"
+msgstr "\nВам потрібно буде ввести IP адресу, яку ви бажаєте призначити на цю машину. Приклад: 111.112.113.114\n\nЯка Ваша IP адреса?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:213
+msgid "ASSIGN IP ADDRESS"
+msgstr "ВКАЗАТИ АДРЕСУ IP"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:222
+msgid ""
+"\n"
+"Now we need to know your netmask. Typically this will be 255.255.255.0 but this can be different depending on your local setup.\n"
+"\n"
+"What is your netmask?"
+msgstr "\nПотрібно вказати маску мережі. Зазвичай це 255.255.255.0, але у залежності від налаштувань мережі може бути іншою.\n\nВкажіть маску мережі"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:231
+msgid "ASSIGN NETMASK"
+msgstr "ВКАЗАТИ МАСКУ МЕРЕЖІ"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:240
+msgid "Do you have a gateway?"
+msgstr "В вас є шлюз?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:251
+msgid "ASSIGN GATEWAY ADDRESS"
+msgstr "ВКАЗАТИ АДРЕСУ ШЛЮЗУ"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:252
+msgid ""
+"\n"
+"What is the IP address for your gateway?"
+msgstr "\nВкажіть адреу IP шлюзу"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:272
+#, sh-format
+msgid ""
+"\n"
+"This is the proposed network configuration for $ENET_DEVICE - If this is OK, then select 'Yes'.\n"
+"If this is not OK and you want to configure again, select 'No'.\n"
+"\n"
+"* IP Address: $LOCAL_IPADDR\n"
+"* Netmask:    $LOCAL_NETMASK"
+msgstr "\nПропоноване налаштування мережі для $ENET_DEVICE - якщо все правильно, виберіть 'Yes'.\nЯкщо ні та бажаєте повторити налаштування, виберіть 'No'.\n\n* Адреса IP: $LOCAL_IPADDR\n* Маска:    $LOCAL_NETMASK"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:292
+#, sh-format
+msgid ""
+"\n"
+"Configuring your network interface $ENET_DEVICE ..."
+msgstr "\nНалаштовується мережевий інтерфейс $ENET_DEVICE ..."
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:329
+msgid "FETCHING CONFIGURATION"
+msgstr "ОТРИМАННЯ НАЛАШТУВАНЬ"
+
+#: ../initrd-scripts/usr-lib-setup/SeTnet:330
+#, sh-format
+msgid ""
+"\n"
+"Attempting to fetch a remote configuration file using $PROTO ..."
+msgstr "\nСпроба отримання віддаленого файлу налаштування використовуючи $PROTO ..."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:27
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:48
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:73
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:98
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:123
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:146
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:165
+msgid "FORMATTING"
+msgstr "ФОРМАТУВАННЯ"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:28
+#, sh-format
+msgid "Formatting $ArG1 with filesystem btrfs."
+msgstr "Форматування $ArG1 у файлову систему btrfs."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:29
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE \n"
+"Filesystem type: btrfs"
+msgstr "Форматування $ArG1\nРозмір у 1Kb блоках: $SIZE \nТип файлової системи: btrfs"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:49
+#, sh-format
+msgid "Formatting $ArG1 with filesystem ext2."
+msgstr "Форматування $ArG1 у файлову систему ext2."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:50
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: ext2"
+msgstr "Форматування $ArG1\nРозмір у 1Kb блоках: $SIZE \nТип файлової системи: ext2"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:74
+#, sh-format
+msgid "Formatting $ArG1 with filesystem ext3."
+msgstr "Форматування $ArG1 у файлову систему ext3."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:75
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: ext3"
+msgstr "Форматування $ArG1\nРозмір у 1Kb блоках: $SIZE \nТип файлової системи: ext3"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:99
+#, sh-format
+msgid "Formatting $ArG1 with filesystem ext4."
+msgstr "Форматування $ArG1 у файлову систему ext4."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:100
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: ext4"
+msgstr "Форматування $ArG1\nРозмір у 1Kb блоках: $SIZE\nТип файлової системи: ext4"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:124
+#, sh-format
+msgid "Formatting $ArG1 with filesystem jfs."
+msgstr "Форматування $ArG1 у файлову систему jfs."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:125
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: jfs"
+msgstr "Форматування $ArG1\nРозмір у 1Kb блоках: $SIZE\nТип файлової системи: jfs"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:147
+#, sh-format
+msgid "Formatting $ArG1 with filesystem reiserfs."
+msgstr "Форматування $ArG1 у файлову систему reiserfs."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:148
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: reiserfs"
+msgstr "Форматування $ArG1\nРозмір у 1Kb блоках: $SIZE\nТип файлової системи: reiserfs"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:166
+#, sh-format
+msgid "Formatting $ArG1 with filesystem xfs."
+msgstr "Форматування $ArG1 у файлову систему xfs."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:167
+#, sh-format
+msgid ""
+"Formatting $ArG1\n"
+"Size in 1K blocks: $SIZE\n"
+"Filesystem type: xfs"
+msgstr "Форматування $ArG1\nРозмір у 1Kb блоках: $SIZE\nТип файлової системи: xfs"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:203
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:204
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:205
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:206
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:207
+msgid "done adding partitions, continue with setup"
+msgstr "додавання розділів закінчено, продовжити встановлення"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:214
+#, sh-format
+msgid "Do you want to format Linux partition ${ArG1}?"
+msgstr "Бажаєте відформатувати розділ Linux ${ArG1}?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:215
+#, sh-format
+msgid "FORMAT PARTITION $ArG1"
+msgstr "ФОРМАТУВАННЯ РОЗДІЛУ $ArG1"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:215
+#, sh-format
+msgid ""
+"If this partition has not been formatted, you should format it.  NOTE: This "
+"will erase all data on it.  Would you like to format this partition?"
+msgstr "Якщо розділ невідформатований, форматування потрібне. УВАГА: При цьому усі дані на розділі буде вилучено. Форматувати цей розділ?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:219
+msgid "Quick format with no bad block checking"
+msgstr "Швидке форматування без перевірки на биті блоки"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:220
+msgid "Slow format that checks for bad blocks"
+msgstr "Повільне форматування з перевіркою на биті блоки"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:221
+msgid "No, do not format this partition"
+msgstr "Ні, не форматувати цей розділ"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:234
+msgid "Ext2 is the traditional Linux file system and is fast and stable."
+msgstr "Ext2 - традиційна файлова система Linux, швидка та стабільна."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:237
+msgid "Ext3 is the journaling version of the Ext2 filesystem."
+msgstr "Ext3 - журнальована версія файлової системи Ext2."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:241
+msgid "Ext4 is the successor to the ext3 filesystem. "
+msgstr "Ext4 - файлова система, що прийшла на заміну Ext3."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:245
+msgid ""
+"ReiserFS is a journaling filesystem that stores all files and filenames in a"
+" balanced tree structure."
+msgstr "ReiserFS - журнальована файлова система, що зберігає дані та імена файлів у збалансованому дереві."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:248
+msgid "Btrfs is a B-tree copy-on-write filesystem."
+msgstr "Btrfs - файлова система, що використовує B-дерева й копіювання-при-запису."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:253
+msgid ""
+"JFS is IBM's Journaled Filesystem, currently used in IBM enterprise servers."
+msgstr "JFS - журнальована файлова система від IBM, що використовується у промислових серверах."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:256
+msgid "XFS is SGI's journaling filesystem that originated on IRIX."
+msgstr "XFS - журнальована файлова система від SGI, початково з IRIX."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:260
+#, sh-format
+msgid "SELECT FILESYSTEM FOR $ArG1 "
+msgstr "ВИБІР ФАЙЛОВОЇ СИСТЕМИ ДЛЯ $ArG1"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:262
+#, sh-format
+msgid "Partition $ArG1 will be formatted."
+msgstr "Розділ $ArG1 буде відформатовано."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:266
+msgid ""
+"Please select the type of filesystem to use for the specified device.  Here "
+"are descriptions of the available filesystems:"
+msgstr "Виберіть тип файлової системи для використання на вказаному пристрої. Ось опис доступних файлових систем:"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:271
+msgid "Standard Linux Ext2 Filesystem"
+msgstr "Ext2 - стандартна журнальована ФС"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:274
+msgid "Ext3 Journaling Filesystem"
+msgstr "Ext3 - журнальована ФС"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:277
+msgid "Ext4 Journaling Filesystem"
+msgstr "Ext4 - журнальована ФС"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:280
+msgid "IBM's Journaled Filesystem"
+msgstr "Jfs - журнальована ФС від IBM"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:283
+msgid "ReiserFS Journaling Filesystem"
+msgstr "ReiserFS - журнальована ФС"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:286
+msgid "Btrfs Copy-on-Write B-tree Filesystem"
+msgstr "Btrfs - ФС з копіюванням-при-запису та Б-деревами"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:289
+msgid "SGI's Journaling Filesystem"
+msgstr "Xfs - журнальована ФС від SGI"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:319
+msgid "Setting up root Linux partition."
+msgstr "Налаштування кореневого розділу Linux."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:321
+msgid "Select Linux installation partition:"
+msgstr "Виберіть розділ для встановлення Linux:"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:325
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:327
+msgid ""
+"Please select a partition from the following list to use for your root (/) "
+"Linux partition."
+msgstr "Виберіть зі списку розділ для кореневого розділу (/) Linux."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:410
+msgid "Setting up other Linux partitions."
+msgstr "Налаштування інших розділів Linux."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:412
+msgid "Select other Linux partitions for /etc/fstab"
+msgstr "Виберіть інші розділи Linux для /etc/fstab"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:418
+#, sh-format
+msgid ""
+"You seem to have more than one partition tagged as type Linux.  You may use "
+"these to distribute your Linux system across more than one partition.  "
+"Currently, you have $ROOT_DEVICE mounted as your / partition.  You might "
+"want to mount directories such as /home or /usr/local on separate "
+"partitions.  You should not try to mount /etc, /sbin, or /bin on their own "
+"partitions since they contain utilities needed to bring the system up and "
+"mount partitions.  Also, do not reuse a partition that you've already "
+"entered before.  Please select one of the Linux partitions listed below, or "
+"if you're done, hit <Continue>."
+msgstr "Схоже, наявні більше одного розділу Linux. Можна використовувати їх для розташування системи на декількох розділах. Зараз $ROOT_DEVICE змонтований як кореневий розділ /. Можливо, забажаєте помістити окремі каталоги, наприклад, /home або /usr/local, на власні розділи. Не намагайтеся розташовувати на окремих розділах каталоги /etc, /sbin або /bin, що містять утиліти, що потрібні для підйому системи та монтування розділів. Крім того, не використовуйте розділи, вже вибрані раніше. Виберіть зі списку нижче один з розділів Linux, по закінченні виберіть <Продовжити>."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:453
+#, sh-format
+msgid "Partition $NEXT_PARTITION will not be reformatted."
+msgstr "Розділ $NEXT_PARTITION не буде відформатовано."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:458
+#, sh-format
+msgid "Partition $NEXT_PARTITION will be formatted with $NEXT_SYS_TYPE."
+msgstr "Розділ $NEXT_PARTITION буде відформатовано у $NEXT_SYS_TYPE."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:495
+#, sh-format
+msgid "SELECT MOUNT POINT FOR $NEXT_PARTITION"
+msgstr "ВИБІР ТОЧКИ МОНТУВАННЯ ДЛЯ $NEXT_PARTITION"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:496
+#, sh-format
+msgid ""
+"OK, now you need to specify where you want the new partition mounted.  For example, if you want to put it under /usr/local, then respond:  /usr/local\n"
+"Where would you like to mount $NEXT_PARTITION?"
+msgstr "OK, тепер потрібно вказати, де змонтувати новий розділ. Наприклад, якщо бажаєте помістити його у /usr/local, вкажіть:  /usr/local\nВкажіть каталог, куди змонтувати $NEXT_PARTITION"
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:538
+msgid "Finished setting up Linux partitions."
+msgstr "Закінчено налаштування розділів Linux."
+
+#: ../initrd-scripts/usr-lib-setup/SeTpartitions:539
+msgid "DONE ADDING LINUX PARTITIONS TO /etc/fstab"
+msgstr "ЗАКІНЧЕНО ДОДАВАННЯ РОЗДІЛІВ LINUX У /etc/fstab"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:26
+msgid "NO SWAP SPACE DETECTED"
+msgstr "РОЗДІЛ ПІДКАЧКИ НЕ ВИЯВЛЕНО"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:26
+msgid ""
+"You have not created a swap partition with Linux fdisk.  Do you want to "
+"continue installing without one? "
+msgstr "Не створено розділ підкачки (swap) за допомогою fdisk з Linux. Продовжити встановлення без нього?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:30
+msgid "ABORTING INSTALLATION"
+msgstr "ПЕРЕРИВАННЯ ВСТАНОВЛЕННЯ"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:30
+msgid "Create a swap partition with Linux fdisk, and then try this again."
+msgstr "Створіть розділ підкачки за допомогою fdisk з Linux й спробуйте знову."
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:39
+#: ../initrd-scripts/usr-lib-setup/SeTswap:79
+msgid "Setting up swap partitions."
+msgstr "Налаштування розділу підкачки (swap)."
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:41
+msgid "SWAP SPACE DETECTED"
+msgstr "ВИЯВЛЕНО РОЗДІЛ ПІДКАЧКИ"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:43
+msgid ""
+"Salix Setup has detected one or more swap partitions on your system.  These "
+"partitions have been preselected to be set up as swap space.  If there are "
+"any swap partitions that you do not wish to use with this installation, "
+"please unselect them with the up and down arrows and spacebar.  If you wish "
+"to use all of them (this is recommended), simply hit the ENTER key."
+msgstr "Встановлювач Salix розпізнав один або більше розділів підкачки у Вашій системі. Ці розділи вибрані для використання як простір підкачки. Якщо серед них є такі, які Ви не бажаєте використовувати, зніміть з них відмітку, використовуючи стрілки вверх, вниз і кнопку пробілу. Якщо ж Ви бажаєте використовувати їх всі (це рекомендується), тоді просто натисніть кнопку ВВІД."
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:56
+#, sh-format
+msgid "Linux swap partition, ${PARTSIZE}"
+msgstr "Розділ підкачки Linux, ${PARTSIZE}"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:80
+msgid "CHECK SWAP PARTITIONS FOR BAD BLOCKS?"
+msgstr "ПЕРЕВІРИТИ РОЗДІЛ ПІДКАЧКИ НА ПОГАНІ БЛОКИ?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:81
+msgid ""
+"Salix Setup will now prepare your system's swap space.  When formatting swap"
+" partitions with mkswap you may also check them for bad blocks.  This is not"
+" the default since nearly all modern hard drives check themselves for bad "
+"blocks anyway.  Would you like to check for bad blocks while running mkswap?"
+msgstr "Встановлювач Salix зараз підготує Ваш системний простір підкачки. Під час форматування розділів підкачки за допомогою mkswap можна перевірити їх на погані блоки. Ця операція не є типовою, оскільки майже всі сучасні пристрої постійно перевіряють себе на погані блоки. Ви б бажали перевірити на погані блоки під час роботи mkswap?"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:101
+#, sh-format
+msgid "Activating swap partition ${swappartition}:"
+msgstr "Активація розділу підкачки (swap) ${swappartition}:"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:117
+msgid ""
+"Your swapspace has been configured. This information   will be added to your"
+" /etc/fstab:"
+msgstr "Налаштування ділянки підкачки закінчено. У /etc/fstab буде додано наступну інформацію:"
+
+#: ../initrd-scripts/usr-lib-setup/SeTswap:122
+msgid "SWAP SPACE CONFIGURED"
+msgstr "ДІЛЯНКУ ПІДКАЧКИ НАЛАШТОВАНО"
+
+#: ../initrd-scripts/usr-lib-setup/SeTusers:9
+msgid "User setup"
+msgstr "Налаштування користувачів"
+
+#: ../initrd-scripts/usr-lib-setup/SeTusers:10
+msgid ""
+"You will now be presented with some dialogs so that you can create one or "
+"more user accounts in your new system."
+msgstr "Зараз Вам буде показано деякі пропозиції щодо створення одного або й більше користувачів для Вашої нової системи."
+
+#: ../initrd-scripts/usr-lib-setup/SeTusers:13
+msgid ""
+"The first user you will create, will be able to run commands as a privileged"
+" user through sudo. Any other user will not be able to run commands with "
+"sudo unless you add them to the wheel group."
+msgstr "Перший створений користувач зможе виконувати команди як привілейований користувач за допомогою команди sudo. Будь-який  інший користувач не буде в змозі виконувати команди за допомогою sudo, аж поки Ви не додасте його до групи wheel."
+
+#: ../initrd-scripts/usr-lib-setup/SeTusers:17
+msgid "The root user is disabled by default."
+msgstr "Користувач root типово недоступний."
+
+#: ../initrd-scripts/usr-lib-setup/slackinstall:55
+msgid "FTP/HTTP DOWNLOAD FAILURE"
+msgstr "ЗВАНТАЖЕННЯ З FTP/HTTP НЕ ПОВЕЛОСЯ"
+
+#: ../initrd-scripts/usr-lib-setup/slackinstall:77
+#, sh-format
+msgid "installpkg error #$ArG1"
+msgstr "помилка installpkg #$ArG1"
+
+#: ../initrd-scripts/usr-lib-setup/slackinstall:78
+#, sh-format
+msgid ""
+"There was a fatal error attempting to install $ArG2.  The package may be "
+"corrupt, the installation media may be bad, or something else has caused the"
+" package to be unable to be read without error.  You may hit enter to "
+"continue if you wish, but if this is an important required package then your"
+" installation may not work as-is."
+msgstr "Сталася фатальна помилка під час спроби встановлення $ArG2. Пакунок, можливо, був пошкоджений, або погані джерела встановлення, або щось інше унеможливило читання пакунку без помилок. Ви можете натиснути ввід для продовження, однак, якщо це важливий пакунок, тоді Ваше встановлення може перестати працювати так як треба."
+
+#: ../initrd-scripts/usr-lib-setup/slackinstall:115
+msgid "Installing package set:"
+msgstr "Встановлення набору пакунків:"
+
+#: ../initrd-scripts/usr-lib-setup/slackinstall:125
+#: ../initrd-scripts/usr-lib-setup/slackinstall:137
+#: ../initrd-scripts/usr-lib-setup/slackinstall:151
+#: ../initrd-scripts/usr-lib-setup/slackinstall:166
+#: ../initrd-scripts/usr-lib-setup/slackinstall:179
+#: ../initrd-scripts/usr-lib-setup/slackinstall:192
+#: ../initrd-scripts/usr-lib-setup/slackinstall:203
+msgid "Installing:"
+msgstr "Встановлення:"

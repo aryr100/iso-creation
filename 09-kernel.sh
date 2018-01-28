@@ -1,9 +1,8 @@
 #!/bin/sh
 #
-# This script gets slackware kernel files from a slackware
-# repository 
-#
-# You will first need to install curlftpfs to use it.
+# This script extracts the kernel image files+friends from the kernel
+# packages that have been previously downloaded and places them inside
+# the kernels directory
 
 if [ "$UID" -eq "0" ]; then
 	echo "Don't run this script as root"
@@ -12,50 +11,44 @@ fi
 
 set -e
 
-if [ ! $# -eq 2 ]; then
-	echo "ERROR. Syntax is: $0 ARCH VERSION"
+if [ ! -f ARCH ]; then
+	echo "No ARCH file."
 	exit 1
-fi
-
-if [ ! -x /usr/bin/curlftpfs ]; then
-	echo "curlftpfs is missing"
-	exit 1
-fi
-
-arch=$1
-ver=$2
-CWD=`pwd`
-
-unset LIBDIRSUFFIX
-if [[ "$arch" == "x86_64" ]]; then
-	export LIBDIRSUFFIX="64"
+else
+	arch=`cat ARCH`
 fi
 
 rm -rf kernel/$arch
 mkdir -p kernel/$arch
 
-# create the mountpoint for the ftpfs
-mkdir ftp
-FTP="$CWD/ftp"
-
-# mount the slackware.org.uk ftp server with curlftpfs
-# we're using the slackware.org.uk mirror because it includes both
-# slackware and salix repos
-echo "Mounting ftp repository..."
-curlftpfs ftp://ftp.slackware.org.uk ftp
-
 # get the slack kernel
 echo "Getting the slackware kernel..."
 if [[ "$arch" == "i486" ]]; then
-	cp -r $FTP/slackware/slackware${LIBDIRSUFFIX}-$ver/kernels/{hugesmp.s,huge.s} kernel/$arch/
+	mkdir kernel/$arch/hugesmp.s
+	tar --wildcards -xf iso/salix/kernels/kernel-huge-smp-*-i686-*.txz \
+		boot/vmlinuz-huge-* -O > kernel/$arch/hugesmp.s/bzImage
+	tar --wildcards -xf iso/salix/kernels/kernel-huge-smp-*-i686-*.txz \
+		boot/System.map-huge-* -O | gzip > kernel/$arch/hugesmp.s/System.map.gz
+	tar --wildcards -xf iso/salix/kernels/kernel-huge-*-i686-*.txz \
+		boot/config-huge-* -O > kernel/$arch/hugesmp.s/config
+	if [ -f iso/salix/kernels/kernel-huge-*-i586-*.txz ]; then
+		mkdir kernel/$arch/huge.s
+		tar --wildcards -xf iso/salix/kernels/kernel-huge-*-i586-*.txz \
+			boot/vmlinuz-huge-* -O > kernel/$arch/huge.s/bzImage
+		tar --wildcards -xf iso/salix/kernels/kernel-huge-*-i586-*.txz \
+			boot/System.map-huge-* -O | gzip > kernel/$arch/huge.s/System.map.gz
+		tar --wildcards -xf iso/salix/kernels/kernel-huge-*-i586-*.txz \
+			boot/config-huge-* -O > kernel/$arch/huge.s/config
+	fi
 else
-	cp -r $FTP/slackware/slackware${LIBDIRSUFFIX}-$ver/kernels/huge.s kernel/$arch/
+	mkdir kernel/$arch/huge.s
+	tar --wildcards -xf iso/salix/kernels/kernel-huge-*-x86_64-*.txz \
+		boot/vmlinuz-huge-* -O > kernel/$arch/huge.s/bzImage
+	tar --wildcards -xf iso/salix/kernels/kernel-huge-*-x86_64-*.txz \
+		boot/System.map-huge-* -O | gzip > kernel/$arch/huge.s/System.map.gz
+	tar --wildcards -xf iso/salix/kernels/kernel-huge-*-x86_64-*.txz \
+		boot/config-huge-* -O > kernel/$arch/huge.s/config
 fi
-
-# unmount the ftpfs and remove the mountpoint
-echo "Unmounting ftp repository..."
-fusermount -u $FTP
-rmdir $FTP
 
 echo "DONE!"
 set +e
